@@ -4,6 +4,8 @@ from music import MusicBot
 import discord
 import os
 
+
+# remember to put your .env file in the same directory as these files
 load_dotenv()
 
 # allow bot to subscribe to specific buckets/ALL events (include presences and members)
