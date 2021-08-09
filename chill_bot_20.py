@@ -17,6 +17,6 @@ async def on_ready():
     print('-' *5)
 
 
-TOKEN = os.getenv('BOT_2')
+TOKEN = os.getenv('BOT_TOKEN')
 bot.add_cog(MusicBot(bot))
 bot.run(TOKEN)
