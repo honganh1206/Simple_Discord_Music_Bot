@@ -15,23 +15,7 @@ async def in_voice_channel(ctx):
 
 
 class MusicBot(commands.Cog):
-    """ 
-    using cogs to organize a COLLECTION of commands  
-    
-    (from discord.py document)
-    The gist:
 
-        Each cog is a Python class that subclasses commands.Cog.
-
-        Every command is marked with the commands.command() decorator.
-
-        Every listener is marked with the commands.Cog.listener() decorator.
-
-        Cogs are then registered with the Bot.add_cog() call.
-
-        Cogs are subsequently removed with the Bot.remove_cog() call.
-
-    """
     def __init__(self,bot):
         self.bot = bot
     
@@ -102,19 +86,6 @@ class MusicBot(commands.Cog):
             await ctx.message.add_reaction('⏭')
         else:
             await ctx.send(f"{self.bot.user} was not playing anything before this. Use play_song command")
-
-    @commands.command()
-    async def loop(self, ctx: commands.Context):
-        """ 
-        Loop the currently playing song
-        Invoke this command again to unloop
-        """
-        voice_client = ctx.message.guild.voice_client
-        if not voice_client.is_playing():
-            await ctx.send(f"{self.bot.user} is not playing anything at the moment.")
-
-        voice_client.loop = not voice_client.loop
-        await ctx.message.add_reaction('🔁')
         
     @commands.command()
     async def leave(self,ctx):
