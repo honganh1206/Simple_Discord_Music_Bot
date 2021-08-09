@@ -7,9 +7,11 @@ Here is how it works:
 
 ## Before using this bot:
 
- **1. Installing FFMPEG and add it to your PATH:** Here is a [tutorial](https://www.youtube.com/watch?v=r1AtmY-RMyQ) on how to install
+ **1. Create a Discord bot (apparently)**: [Here is how to do it](https://discordpy.readthedocs.io/en/stable/discord.html) from the official documentation of discord.py
+ 
+ **2. Installing FFMPEG and add it to your PATH:** Here is a [tutorial](https://www.youtube.com/watch?v=r1AtmY-RMyQ) on how to install
 
- **2. Get YouTube API with the same email you use for Discord**: You can follow along [this](https://developers.google.com/youtube/v3/getting-started) website for more information. 
+ **3. Get YouTube API with the same email you use for Discord**: You can follow along [this page](https://developers.google.com/youtube/v3/getting-started)  for more information. 
 
 
 ## Commands
